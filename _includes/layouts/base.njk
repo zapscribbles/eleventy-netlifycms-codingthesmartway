@@ -1,0 +1,14 @@
+---
+siteTitle: Eleventy + Netlify CMS (CodingTheSmartWay Tutorial)
+---
+<html>
+    <head>
+        <title>{{ siteTitle }}</title>
+    </head>
+    <body>
+        <h1>{{ siteTitle }}</h1>
+        {% block name %}
+            {{ content | safe }}
+        {% endblock %}
+    </body>
+</html>
